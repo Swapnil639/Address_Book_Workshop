@@ -1,8 +1,6 @@
 body {
     margin: 0;
     height: 100%;
-    font-family: sans-serif;
-    background-color: #f7f7f7;
 }
 
 .header {
@@ -16,7 +14,6 @@ body {
     justify-content: center;
     align-items: center;
     border: 0px solid green;
-    background: #ffffff;
 }
 
 .logo-content {
@@ -34,25 +31,16 @@ body {
 }
 
 .book-text {
-    text-align: left;
-    font: normal normal bold 18px/20px Montserrat;
+    font: normal normal bold 20px/25px Montserrat;
+    font-family: "Montserrat", sans-serif;
     letter-spacing: 0px;
     color: #008CFF;
-    text-transform: uppercase;
+    text-transform: capitalize;
+    font-size: 22px;
 }
 
 .add-book {
-    top: 25px;
-    text-align: left;
-    font: normal normal bold 18px/20px Montserrat;
-    letter-spacing: 0px;
-    color: #42515F;
-    text-transform: uppercase;
-}
-
-.book-text,
-.add-book {
-    padding-left: 5px;
+    color: #42515f;
 }
 
 * {
@@ -61,42 +49,78 @@ body {
 
 .form-content {
     min-height: calc(100% - 80px);
+    background-color: #f7f7f7;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 0px solid green;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border: 0px solid #008CFF;
+    padding: 10px;
+
 }
 
 .form {
-    width: 60%;
+    width: 65%;
+    padding: 44px 60px;
     background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #f5f5f5;
     border-radius: 8px;
     opacity: 1;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 .form-head {
     font: normal normal bold 24px/37px Roboto;
-    letter-spacing: 0.5px;
+    letter-spacing: 0px;
     color: #ffffff;
-    width: 100%;
-    font-weight: 400;
     text-transform: capitalize;
+    opacity: 1;
+    padding: 10px;
     background-color: #008CFF;
+    padding-top: 20px;
+    padding-bottom: 20px;
     text-align: center;
-    height: 55px;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 15px;
-    padding-top: 10px;
-    border-radius: 8px;
-}
-.body {
-    padding: 50px 60px;
+    justify-content: right;
 }
 
 .close {
     float: right;
+}
+
+.row-content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+    align-items: center;
+    border: 0px solid green;
+    margin-top: 30px;
+}
+
+.label {
+    min-width: 10px;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.text {
+    font-size: 16px;
+    color: #42525f;
+    opacity: 1;
+    font-family: Roboto;
+}
+
+.error-output {
+    font-size: 12px;
+    font-style: italic;
+    color: red;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
 }
